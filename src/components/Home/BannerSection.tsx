@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { ReactTyped } from "react-typed";
+import 'devicon/devicon.min.css';
 
 const typedStrings = [
     "{Full Stack} Web ^1000& App<br>Developer_",
@@ -43,9 +44,15 @@ export default function BannerSection () {
                             I deliver web solutions that are innovative, robust, and secure. &nbsp;
                             <span className="text-red-400">&lt;/p&gt;</span>
                         </div>
-                        <div className="flex flex-row gap-1">
+                        <div className="flex flex-row gap-1 text-gray-500">
+                            <div className="flex flex-row gap-2">
+                                <i className="devicon-nodejs-plain colored text-3xl"></i>
+                                <i className="devicon-typescript-plain colored text-3xl"></i>
+                                <i className="devicon-nextjs-plain colored text-3xl"></i>
+                                <i className="devicon-react-plain colored text-3xl"></i>
+                            </div>
                             <span>... and</span>
-                            <Link href={"/"}>more</Link>
+                            <Link href={"/"} className="underline">more</Link>
                         </div>
                     </div>
                 </div>
