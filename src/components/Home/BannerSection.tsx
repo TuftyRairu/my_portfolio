@@ -15,7 +15,7 @@ export default function BannerSection () {
 
             <div className="flex flex-row justify-around items-center rounded-xl max-h-[90vh] p-6 bg-white">
                 <div className="flex justify-center w-full">
-                    <Image src="/ID2.png" alt="Profile" width={200} height={200} className="pentagon object-cover w-48 h-48 rounded-xl" />
+                    <Image src="/ID2.png" alt="Profile" width={200} height={200} className="pentagon object-cover w-96 h-96 rounded-xl" />
                 </div>
                 <div className="flex flex-col gap-4 w-full pr-2">
                     <h1 className="flex flex-row gap-2 text-lg md:text-lg lg:text-lg text-[#0E1524]">
@@ -30,7 +30,7 @@ export default function BannerSection () {
                         backSpeed={60}
                         loop
                     />
-                    <div className="gap-2 flex-row text-lg md:text-lg lg:text-lg text-[#0E1524] pr-3">
+                    <div className="flex flex-col gap-4 text-lg md:text-lg lg:text-lg text-[#0E1524] pr-3">
                         <div className="text-gray-500">
                             <span className="text-red-400">&lt;p&gt;</span>&nbsp;
                             With expertise in cutting-edge technologies like

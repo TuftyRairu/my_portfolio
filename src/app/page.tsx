@@ -7,7 +7,7 @@ import WorkAnalyticsSection from "@/components/Home/WorksAnalyticsSection";
 export default function Home() {
 
   return (
-    <div className="flex flex-col gap-8">
+    <div className="flex flex-col gap-6">
       <BannerSection />
       <WorkAnalyticsSection />
       <ProjectListSection />
