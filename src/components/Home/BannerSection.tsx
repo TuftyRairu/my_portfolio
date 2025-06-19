@@ -25,7 +25,7 @@ export default function BannerSection () {
                     </h1>
                     <ReactTyped
                         strings={typedStrings}
-                        className="text-3xl md:text-4xl lg:text-5xl font-bold text-center lg:text-left text-[#036E46] h-[8vh] lg:h-[17vh]"
+                        className="text-3xl md:text-4xl lg:text-5xl font-bold text-center lg:text-left text-[#036E46] h-[13vh] sm:h-[10vh] lg:h-[17vh]"
                         typeSpeed={80}
                         backSpeed={60}
                         loop
