@@ -13,24 +13,24 @@ export default function BannerSection () {
     return (
         <section id="banner" className="min-y-screen">
 
-            <div className="flex flex-row justify-around items-center rounded-xl max-h-[90vh] p-6 bg-white">
+            <div className="flex flex-col sm:flex-col md:flex-col lg:flex-row justify-around items-center rounded-xl max-h-[140vh] lg:max-h-[90vh] py-7 px-7 gap-7 md:px-16 md:gap-7 bg-white">
                 <div className="flex justify-center w-full">
                     <Image src="/ID2.png" alt="Profile" width={200} height={200} className="pentagon object-cover w-96 h-96 rounded-xl" />
                 </div>
                 <div className="flex flex-col gap-4 w-full pr-2">
-                    <h1 className="flex flex-row gap-2 text-sm md:text-md lg:text-lg text-[#0E1524]">
+                    <h1 className="flex flex-row gap-2 justify-center md:justify-center lg:justify-start text-lg md:text-xl lg:text-2xl text-[#0E1524]">
                         <p className="text-red-400">{"<span>"}</p>
                         <p className="text-gray-500">{"Hey, I'm Rhyle"}</p>
                         <p className="text-red-400">{"</span>"}</p>
                     </h1>
                     <ReactTyped
                         strings={typedStrings}
-                        className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#036E46] h-[17vh]"
+                        className="text-3xl md:text-4xl lg:text-5xl font-bold text-center lg:text-left text-[#036E46] h-[8vh] lg:h-[17vh]"
                         typeSpeed={80}
                         backSpeed={60}
                         loop
                     />
-                    <div className="flex flex-col gap-4 text-sm md:text-md lg:text-lg text-[#0E1524] pr-3">
+                    <div className="flex flex-col gap-4 text-lg md:text-xl lg:text-2xl text-justify lg:text-left text-[#0E1524] pr-3">
                         <div className="text-gray-500">
                             <span className="text-red-400">&lt;p&gt;</span>&nbsp;
                             With expertise in cutting-edge technologies like

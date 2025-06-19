@@ -45,7 +45,7 @@ export default function NavBarComponent() {
                     </div>
                     <h1 className="text-xl font-mono">Rhyle.Dev</h1>
                 </Link>
-                <NavigationMenu className="hidden md:block lg:block">
+                <NavigationMenu className="hidden sm:hidden md:hidden lg:block">
                     <NavigationMenuList className="flex space-x-12">
                         {
                             navlist.map((item) => {
@@ -68,7 +68,7 @@ export default function NavBarComponent() {
                         }
                     </NavigationMenuList>
                 </NavigationMenu>
-                <div className="hidden md:flex lg:flex flex-row space-x-2">
+                <div className="hidden sm:hidden md:hidden lg:flex flex-row space-x-2">
                     {/* <Link 
                         href="#" 
                         className="flex gap-3 text-carrotorangecolor border border-carrotorangecolor rounded-md hover:bg-[#E3E3E3] hover:text-blackpearlcolor hover:border-blackpearlcolor p-2 transition duration-300"
@@ -87,7 +87,7 @@ export default function NavBarComponent() {
                     </Link>
                 </div>
 
-                <div className="md:hidden lg:hidden sm:flex sm:justify-between">
+                <div className="flex justify-between md:flex md:justify-between lg:hidden sm:flex sm:justify-between">
                     <button
                         onClick={() => setIsMenuOpen(!isMenuOpen)}
                         className="text-platinum focus:outline-none cursor-pointer"
