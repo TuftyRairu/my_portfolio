@@ -38,7 +38,7 @@ export default function RootLayout({
         className={`${inter.variable} ${jetbrainsMono.variable} bg-[#E5E7EB] antialiased`} 
       >
       
-        <header role="banner" className="pb-8 pt-4 md:px-8 lg:px-9">
+        <header role="banner" className="pb-8 pt-4 px-3 md:px-8 lg:px-9">
           <NavBarComponent />
         </header>
 
