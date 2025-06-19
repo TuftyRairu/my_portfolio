@@ -8,7 +8,7 @@ export default function ProjectListSection () {
                     Projects
                 </div>
                 <div>
-                    
+                    Projects
                 </div>
             </div>
         </section>
