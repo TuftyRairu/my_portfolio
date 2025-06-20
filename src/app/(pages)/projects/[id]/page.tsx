@@ -1,13 +1,15 @@
 import { projectList } from "@/lib/projects";
 import { notFound } from "next/navigation";
 import Image from "next/image";
+import { use } from "react";
 
 export default function Projects({
     params,
 }: {
-    params: { id: string };
+    params: Promise<{ id: string }>
 }) {
-    const project = projectList.find((p) => p.link === `/projects/${params.id}`);
+    const { id } = use(params);
+    const project = projectList.find((p) => p.link === `/projects/${id}`);
 
     if (!project) return notFound();
 
