@@ -2,7 +2,13 @@ import { projectList } from "@/lib/projects";
 import { notFound } from "next/navigation";
 import Image from "next/image";
 
-export default function Projects({ params }: { params: { id: string } }) {
+interface ProjectDetailPageProps {
+    params: {
+        id: string;
+    }
+}
+
+export default function Projects({ params }: ProjectDetailPageProps) {
     const project = projectList.find(p => p.link === `/projects/${params.id}`);
 
     if (!project) return notFound();
