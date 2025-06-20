@@ -7,7 +7,7 @@ export default function Projects({
 }: {
     params: { id: string };
 }) {
-    const project = projectList.find(p => p.link === `/projects/${params.id}`);
+    const project = projectList.find((p) => p.link === `/projects/${params.id}`);
 
     if (!project) return notFound();
 
