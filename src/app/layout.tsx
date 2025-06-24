@@ -1,6 +1,7 @@
 import { Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import NavBarComponent from "@/components/Static/Navbar";
+import FooterSection from "@/components/Static/Footer";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -38,17 +39,19 @@ export default function RootLayout({
         className={`${inter.variable} ${jetbrainsMono.variable} bg-[#E5E7EB] antialiased`} 
       >
       
-        <header role="banner" className="pb-8 pt-4 px-3 md:px-8 lg:px-9">
-          <NavBarComponent />
-        </header>
+        <div className="min-h-screen flex flex-col">
+          <header role="banner" className="pb-8 pt-4 px-3 md:px-8 lg:px-9">
+            <NavBarComponent />
+          </header>
 
-        <main role="main">
-          {children}
-        </main>
+          <main role="main" className="flex-grow">
+            {children}
+          </main>
 
-        {/* <footer role="footer" className="fixed bottom-0 left-0 w-full py-3 items-center text-center text-gray-500 bg-[#111928]">
-          © {new Date().getFullYear()} Rhyle&apos;s Portfolio. All rights reserved.
-        </footer> */}
+          <footer role="contentinfo">
+            <FooterSection />
+          </footer>
+        </div>
       
       </body>
     

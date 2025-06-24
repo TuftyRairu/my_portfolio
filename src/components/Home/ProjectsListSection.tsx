@@ -21,22 +21,22 @@ export default function ProjectListSection () {
                             return (
                                 <div key={item.title} className="flex flex-col gap-4">
                                     <Dialog>
-                                        <DialogTrigger className="cursor-pointer hover:shadow-lg hover:w-24">
-                                            <Image src={item.src} alt={item.alt} width={100} height={100} />
+                                        <DialogTrigger className="flex justify-center cursor-pointer">
+                                            <Image src={item.src} alt={item.alt} className="hover:shadow-lg" width={100} height={100} />
                                         </DialogTrigger>
                                         <DialogContent>
-                                            <DialogHeader>
-                                                <DialogTitle>{item.title}</DialogTitle>
-                                                <div className="flex flex-row justify-between">
-                                                    <Image src={item.src} alt={item.alt} width={100} height={100} />
-                                                    <DialogDescription>{item.description}</DialogDescription>
-                                                </div>
-                                                <Link href={item.link}>Open</Link>
-                                            </DialogHeader>
+                                            <DialogTitle>{item.title}</DialogTitle>
+                                            <div className="flex flex-row justify-between gap-4">
+                                                <Image src={item.src} alt={item.alt} width={100} height={100} />
+                                                <DialogDescription className="text-justify">{item.description}</DialogDescription>
+                                            </div>
+                                            <div className="flex justify-end pr-5 w-full">
+                                                <Link href={item.endpoint} className="border-2 border-[#111928] hover:bg-[#91F6D0] px-3 py-1 rounded-md">Open</Link>
+                                            </div>
                                         </DialogContent>
                                     </Dialog>
                                     
-                                    <h1>{item.title}</h1>
+                                    <h1 className="text-center">{item.title}</h1>
                                 </div>
                             )
                         })

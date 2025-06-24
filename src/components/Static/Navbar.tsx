@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { NavigationMenu, NavigationMenuList, NavigationMenuItem, NavigationMenuLink } from "@radix-ui/react-navigation-menu";
-import { ChevronLeft, ChevronRight, Github, HopOffIcon, LinkedinIcon, Menu, X } from "lucide-react";
+import { ChevronLeft, ChevronRight, Github, HopOffIcon, LinkedinIcon, Menu, Workflow, X } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
@@ -13,7 +13,7 @@ const navlist = [
     },
     {
         title: "Projects",
-        link: "#projects"
+        link: "/projects"
     },
     {
         title: "Resume",
@@ -83,7 +83,7 @@ export default function NavBarComponent() {
                         <LinkedinIcon />
                     </Link>
                     <Link href="https://hackerone.com/tuftmist?type=user" className="text-platinum hover:text-[#91F6D0] px-1">
-                        <HopOffIcon />
+                        <Workflow />
                     </Link>
                 </div>
 
