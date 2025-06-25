@@ -3,13 +3,13 @@ import { notFound } from "next/navigation";
 import Image from "next/image";
 import { use } from "react";
 
-export default function Projects({
+export default function Project({
     params,
 }: {
     params: Promise<{ id: string }>
 }) {
     const { id } = use(params);
-    const project = projectList.find((p) => p.link === `/projects/${id}`);
+    const project = projectList.find((p) => p.endpoint === `/projects/${id}`);
 
     if (!project) return notFound();
 
