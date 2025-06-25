@@ -1,5 +1,3 @@
-"use client";
-
 import { experienceList } from "@/lib/experiences";
 import { ExperienceCard } from "./ExperienceCard";
 
