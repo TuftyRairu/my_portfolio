@@ -1,3 +1,5 @@
+"use client";
+
 import { experienceList } from "@/lib/experiences";
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";

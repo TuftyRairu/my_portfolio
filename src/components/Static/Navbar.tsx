@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { NavigationMenu, NavigationMenuList, NavigationMenuItem, NavigationMenuLink } from "@radix-ui/react-navigation-menu";
-import { ChevronLeft, ChevronRight, Github, HopOffIcon, LinkedinIcon, Menu, Workflow, X } from "lucide-react";
+import { ChevronLeft, ChevronRight, Github, LinkedinIcon, Menu, Workflow, X } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 

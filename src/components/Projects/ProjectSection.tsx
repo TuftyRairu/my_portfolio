@@ -1,3 +1,5 @@
+"use client";
+
 import { Card, CardContent, CardFooter, CardTitle } from "../ui/card";
 
 

@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import { ChevronLeft, ChevronRight, Github, LinkedinIcon } from "lucide-react";
 

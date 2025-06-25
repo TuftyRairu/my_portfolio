@@ -1,3 +1,5 @@
+"use client";
+
 import { Calendar, Monitor, Ribbon, Smile } from "lucide-react";
 
 
